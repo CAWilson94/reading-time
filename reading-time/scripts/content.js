@@ -14,6 +14,7 @@ if (article) {
    * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
    */
 
+  console.log("HELLO?");
   console.log("The article is.." + article.textContent)
   const wordMatchRegExp = /[^\s]+/g;
   const words = text.matchAll(wordMatchRegExp);

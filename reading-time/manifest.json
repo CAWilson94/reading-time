@@ -9,10 +9,14 @@
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
+  "permissions": [],
+  "host_permissions": ["*://*/*"],
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
       "matches": [
+        "*://*/*",
+        "https://www.bbc.co.uk/news/*",
         "https://developer.chrome.com/docs/extensions/*",
         "https://developer.chrome.com/docs/webstore/*"
       ]
